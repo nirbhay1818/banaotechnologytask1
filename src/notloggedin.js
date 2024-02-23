@@ -44,7 +44,7 @@ const Notloggedin = () => {
   
     const Updating_follow_grp = (clicked_group) => {
 
-        follow_groups.map((group, index) => {(group[1] === clicked_group) && (follow_groups[index][2] = !group[2])})
+        follow_groups.map((group, index) => ((group[1] === clicked_group) && (follow_groups[index][2] = !group[2])))
         setFollow_groups([...follow_groups])
 
     }
